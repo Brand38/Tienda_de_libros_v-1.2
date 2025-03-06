@@ -1,0 +1,96 @@
+@font-face {
+    font-family: neew;
+    src: url(/tipografias/Kanit-Regular.ttf);
+}
+
+* {
+    font-family: neew;
+    user-select: none;
+}  
+
+:root {
+    --bg-color: #222;
+    --text-color: #fff;
+}
+
+div, body, ul, li, a, p, h1, h2, span, header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    color: var(--text-color);
+    padding: 0 10px;
+    width: 100vw;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid #fff;
+}
+
+.header_page {
+    display: flex;
+    align-items: center;
+}
+
+.header_page img {
+    height: 26px;
+}
+
+i {
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    padding: 2px 4px;
+}
+
+.header_nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+/* -------- Main section */
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+    height: 60vh;
+    padding: 40px;
+    gap: 40px;
+}
+
+.content_book {
+    background-color: red;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+}
+
+.content_book:nth-child(1) {
+    background-image: url(/imagenes/Libro-Las_48_leyes_del_poder.png);
+}
+
+.content_book:nth-child(2) {
+    background-image: url(/imagenes/618nVO9D2lL._SL1000_.jpg);
+}
+
+.content_book:nth-child(3) {
+    background-image: url(/imagenes/71mssSA7QgL._SL1200_.jpg);
+}
+
+.content_book:nth-child(4) {
+    background-image: url(/imagenes/Libro-Maestria.png);
+}
+
+/* 133b2a 
+1a899a
+*/
